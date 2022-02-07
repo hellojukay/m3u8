@@ -6,7 +6,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/oopsguy/m3u8/dl"
+	"github.com/hellojukay/m3u8/dl"
 )
 
 var (
