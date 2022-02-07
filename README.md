@@ -36,9 +36,11 @@ Windows PowerShell
 .\m3u8.exe -u="http://example.com/index.m3u8" -o="D:\data\example"
 ```
 
-## Download
+## Install
 
-[Binary packages](https://github.com/oopsguy/m3u8/releases)
+```bash
+go install github.com/hellojukay/m3u8@latest
+```
 
 ## Screenshots
 

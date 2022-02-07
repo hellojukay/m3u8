@@ -43,9 +43,11 @@ Windows PowerShell
 
 部分链接可能限制请求频率，可根据实际情况调整 `c` 参数的值。
 
-## 下载
+## 安装
 
-[二进制文件](https://github.com/oopsguy/m3u8/releases)
+```bash
+go install github.com/hellojukay/m3u8@latest
+```
 
 ## 截屏
 
