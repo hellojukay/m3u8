@@ -27,7 +27,6 @@ func Get(url string) (io.ReadCloser, error) {
 		return nil, err
 	}
 	if resp.StatusCode != 200 {
-		io.Copy(os.Stdout, req.Body)
 		return nil, fmt.Errorf("http error: status code %d", resp.StatusCode)
 	}
 	return resp.Body, nil
