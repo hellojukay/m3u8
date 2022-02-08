@@ -5,7 +5,6 @@ import (
 	"io"
 	"net/http"
 	"net/http/cookiejar"
-	"os"
 	"time"
 )
 
