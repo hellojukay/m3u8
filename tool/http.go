@@ -20,9 +20,9 @@ func init() {
 
 func Get(url string) (io.ReadCloser, error) {
 	req, _ := http.NewRequest(http.MethodGet, url, nil)
-	req.Header.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36")
-	req.Header.Add("referer", "https://jable.tv/")
-	req.Header.Add("origin", "https://jable.tv/")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36")
+	req.Header.Set("referer", "https://jable.tv/")
+	req.Header.Set("origin", "https://jable.tv/")
 
 	resp, err := c.Do(req)
 	if err != nil {
